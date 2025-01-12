@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: getting-started-dep
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: getting-started
+  template:
+    metadata:
+      labels:
+        app: getting-started
+    spec:
+      containers:
+        - name: getting-started
+          image: leebissessar5/getting-started:1.0
