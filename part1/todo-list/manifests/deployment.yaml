@@ -15,3 +15,6 @@ spec:
       containers:
         - name: todo-list
           image: leebissessar5/todo-list:latest
+          env:
+          - name: PORT
+            value: "3000"
