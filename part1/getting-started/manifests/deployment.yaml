@@ -14,4 +14,7 @@ spec:
     spec:
       containers:
         - name: getting-started
-          image: leebissessar5/getting-started:1.0
+          image: leebissessar5/getting-started:latest
+          env:
+          - name: PORT
+            value: "3000"
